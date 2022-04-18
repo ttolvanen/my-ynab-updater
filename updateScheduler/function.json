@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 2 * * *"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "outputQueueItem",
+      "queueName": "processqueue",
+      "connection": "nordicynabprodsa_STORAGE"
+    }
+  ],
+  "scriptFile": "../dist/updateScheduler/index.js"
+}

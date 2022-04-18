@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "processqueue",
+      "connection": "nordicynabprodsa_STORAGE"
+    }
+  ],
+  "scriptFile": "../dist/accountProcessor/index.js"
+}
