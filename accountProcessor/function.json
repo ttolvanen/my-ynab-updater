@@ -6,6 +6,13 @@
       "direction": "in",
       "queueName": "processqueue",
       "connection": "nordicynabprodsa_STORAGE"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "outputQueueItem",
+      "queueName": "get-account-transactions",
+      "connection": "nordicynabprodsa_STORAGE"
     }
   ],
   "scriptFile": "../dist/accountProcessor/index.js"
